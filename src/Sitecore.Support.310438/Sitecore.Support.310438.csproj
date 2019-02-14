@@ -42,6 +42,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Microsoft.Extensions.DependencyInjection.Abstractions, Version=1.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60, processorArchitecture=MSIL">
+      <HintPath>..\packages\SC.Microsoft.Extensions.DependencyInjection.Abstractions.9.0.1\lib\Microsoft.Extensions.DependencyInjection.Abstractions.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="Sitecore.ExperienceForms, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\SC.Sitecore.ExperienceForms.9.0.1\lib\Sitecore.ExperienceForms.dll</HintPath>
       <Private>False</Private>
@@ -65,11 +69,17 @@
       <HintPath>..\packages\SC.System.Web.Mvc.9.0.1\lib\System.Web.Mvc.dll</HintPath>
       <Private>False</Private>
     </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\SC.System.Web.WebPages.9.0.1\lib\System.Web.WebPages.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="System.Xml" />
     <Reference Include="System.Configuration" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ExperienceForms\Mvc\Controllers\FormBuilderController.cs" />
+    <Compile Include="ExperienceForms\Mvc\Filters\ValidateFormRequestAttribute.cs" />
+    <Compile Include="ExperienceForms\Mvc\Filters\ValidateFormRequestContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
