@@ -80,6 +80,7 @@
     <Compile Include="ExperienceForms\Mvc\Controllers\FormBuilderController.cs" />
     <Compile Include="ExperienceForms\Mvc\Filters\ValidateFormRequestAttribute.cs" />
     <Compile Include="ExperienceForms\Mvc\Filters\ValidateFormRequestContext.cs" />
+    <Compile Include="ExperienceForms\Mvc\Pipelines\Initialize\InitializeRoutes.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
